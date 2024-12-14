@@ -33,6 +33,7 @@
             opacity: 1; /* Bắt đầu ở trạng thái ẩn */
             visibility: hidden;
             transition: opacity 0.3s ease, visibility 0.3s ease;
+            margin-top: 200px;
         }
 
         footer.visible {
@@ -126,18 +127,15 @@
     <script>
         // Hiển thị footer khi cuộn đến cuối trang
         window.addEventListener('scroll', function() {
-            const footer = document.getElementById('page-footer');
-            const footerSpace = document.querySelector('.footer-space');
-            const isAtBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - footerSpace.offsetHeight);
+    const footer = document.getElementById('page-footer');
+    const footerSpace = document.querySelector('.footer-space');
+    const isAtBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - footerSpace.offsetHeight);
 
-            if (isAtBottom) {
-                footer.classList.add('visible');
-            } else {
-                footer.classList.remove('visible');
-            }
-        });
+    if (isAtBottom) {
+        footer.classList.add('visible');
+    }
+});
 
-    
 
     </script>
       <script>
