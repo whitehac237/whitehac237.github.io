@@ -30,7 +30,7 @@
         footer {
             background-color: black;
             color: white;
-            opacity: 0; /* Bắt đầu ở trạng thái ẩn */
+            opacity: 1; /* Bắt đầu ở trạng thái ẩn */
             visibility: hidden;
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
@@ -107,18 +107,6 @@
                 <a href="https://www.facebook.com/messages/t/6999389380094382" target ="_self" >Nhóm ChatBox</a>
             </div>
         </div>
-        
-          <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const links = document.querySelectorAll('a[target="_self"]');
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                window.location.href = this.href;
-            });
-        });
-    });
-</script>
     </div>
 
     <!-- Footer -->
@@ -152,6 +140,16 @@
     
 
     </script>
-  
+      <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const links = document.querySelectorAll('a[target="_self"]');
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = this.href;
+            });
+        });
+    });
+</script>
 </body>
 </html>
